@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Healthymain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-49dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_logo"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/healthy_calories"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingVertical="30dp">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/login_but"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:background="@drawable/css_but"-->
+<!--                    android:paddingHorizontal="40dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:text="@string/login"-->
+<!--                    android:textColor="#000000" />-->
+
+                <TextView
+                    android:id="@+id/login_but_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/css_but"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="#000000"
+                    android:text="@string/login_but_main" />
+
+                <TextView
+                    android:id="@+id/register_but"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/css_but"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/register"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="#F0ADA7"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="@string/bar" />-->
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+<!--            <EditText-->
+<!--                android:id="@+id/email_reg"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:hint="@string/email_login"-->
+<!--                android:background="@drawable/rounded_corner"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:layout_marginHorizontal="30dp"-->
+<!--                android:paddingVertical="15dp"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:importantForAutofill="no" />-->
+
+            <EditText
+                android:id="@+id/email_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email_login"
+                android:importantForAutofill="no"
+                android:layout_marginHorizontal="30dp"
+                android:paddingVertical="15dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingHorizontal="10dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/pass_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="30dp"
+                android:hint="@string/pass_login"
+                android:background="@drawable/rounded_corner"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:layout_marginVertical="9dp"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/login_but"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:paddingHorizontal="40dp"-->
+<!--                android:paddingVertical="10dp"-->
+<!--                android:layout_marginVertical="30dp"-->
+<!--                android:background="@drawable/css_but"-->
+<!--                android:text="@string/login_but" />-->
+
+            <TextView
+                android:id="@+id/login_but_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="10dp"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/css_but"
+                android:text="@string/login_but_login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingVertical="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notmem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:text="@string/notmem" />
+
+                <TextView
+                    android:id="@+id/goto_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/register"
+                    android:textColor="#48C9B0" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

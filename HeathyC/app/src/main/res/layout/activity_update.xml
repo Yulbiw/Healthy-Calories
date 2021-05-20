@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0ADA7"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bar_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#F0ADA7"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/bar_update"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:textColor="#000000"
+            android:text="@string/textupdate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ubname_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ubname_ac"
+            android:inputType="textPersonName"
+            android:layout_marginHorizontal="30dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingHorizontal="10dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/cal_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cal_up"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="30dp"
+            android:paddingVertical="15dp"
+            android:layout_marginVertical="9dp"
+            android:background="@drawable/rounded_corner"
+            android:paddingHorizontal="10dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/explainfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/explainfor" />
+
+        <TextView
+            android:id="@+id/update_but_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="35dp"
+            android:background="@drawable/css_but"
+            android:text="@string/update_but_update" />
+    </LinearLayout>
+
+</LinearLayout>

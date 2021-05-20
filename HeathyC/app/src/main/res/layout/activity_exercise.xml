@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0ADA7"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/drawer_act"-->
+                <!--                    android:layout_width="60dp"-->
+                <!--                    android:layout_height="60dp"-->
+                <!--                    android:background="#F0ADA7"-->
+                <!--                    android:contentDescription="@string/drawer_act"-->
+                <!--                    android:paddingVertical="15dp"-->
+                <!--                    app:srcCompat="@drawable/menu" />-->
+
+                <TextView
+                    android:id="@+id/bar_ex"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#F0ADA7"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/bar_ex"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/line"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/phototext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phototext"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/add_photo_e"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/add_photo"
+            app:srcCompat="@drawable/add"/>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/inputmin"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginHorizontal="30dp"-->
+    <!--        android:paddingVertical="15dp"-->
+    <!--        android:importantForAutofill="no"-->
+    <!--        android:background="@drawable/rounded_corner"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:text="@string/inputmin" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/line"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/inputmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/block_corner"
+                android:ems="10"
+                android:hint="@string/inputmin"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingVertical="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_exer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/date_exer" />
+
+            <TextView
+                android:id="@+id/add_date_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/addbutto"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="10dp"
+                android:textColor="#000000"
+                android:text="@string/add_date_ex" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/manu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manu"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinner_ex"
+                android:layout_width="165dp"
+                android:layout_height="38dp"
+                android:layout_gravity="end"
+                android:background="@drawable/addbutto"
+                android:layout_marginStart="160dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!--            <Spinner-->
+        <!--                android:id="@+id/add_but_ex_manu"-->
+        <!--                android:layout_width="165dp"-->
+        <!--                android:layout_height="38dp"-->
+        <!--                android:layout_gravity="end"-->
+        <!--                android:layout_marginTop="-10dp"-->
+        <!--                android:layout_marginEnd="50dp"-->
+        <!--                android:spinnerMode="dropdown"-->
+        <!--                android:background="@drawable/addbutto"-->
+        <!--                android:paddingHorizontal="70dp"-->
+        <!--                android:paddingVertical="10dp"-->
+        <!--                android:text="@string/add_but_ex_manu"-->
+        <!--                android:textColor="#000000" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/line">
+
+        <Button
+            android:id="@+id/rec_but"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/css_but"
+            android:text="@string/rec_but" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/itemex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/itemex" />
+
+    <TextView
+        android:id="@+id/item2ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

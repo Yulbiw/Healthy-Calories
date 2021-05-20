@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Healthyregister">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/bar_reg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="#F0ADA7"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:text="@string/bar_reg" />-->
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:paddingHorizontal="20dp"
+            android:text="@string/register_title"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="9dp"
+                android:background="@drawable/rounded_corner"
+                android:ems="10"
+                android:hint="@string/name_reg"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/editText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:background="@drawable/rounded_corner"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:layout_marginHorizontal="30dp"-->
+<!--                android:paddingVertical="15dp"/>-->
+
+            <EditText
+                android:id="@+id/email_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/rounded_corner"
+                android:hint="@string/email_reg"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:paddingVertical="15dp"
+                android:importantForAutofill="no" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/pass_log"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:layout_marginHorizontal="30dp"-->
+<!--                android:hint="@string/pass_login"-->
+<!--                android:background="@drawable/rounded_corner"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:paddingVertical="15dp"-->
+<!--                android:layout_marginVertical="9dp"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="textPassword" />-->
+
+            <EditText
+                android:id="@+id/pass_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="30dp"
+                android:hint="@string/pass_reg"
+                android:background="@drawable/rounded_corner"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:layout_marginVertical="9dp"
+                android:inputType="textPassword"
+                android:importantForAutofill="no" />
+
+
+            <EditText
+                android:id="@+id/confirmpass_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/rounded_corner"
+                android:ems="10"
+                android:hint="@string/confirmpass_reg"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp" />
+
+            <TextView
+                android:id="@+id/submit_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/css_but"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="10dp"
+                android:text="@string/submit_reg"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

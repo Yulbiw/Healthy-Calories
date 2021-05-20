@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0ADA7"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bar_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#F0ADA7"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/bar_setting"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/cover"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_photo_set"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="-40dp"
+                android:layout_marginStart="30dp"
+                android:contentDescription="@string/add_photo"
+                app:srcCompat="@drawable/add" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nametext_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="100dp"
+                    android:background="@drawable/css_but"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/nametext_set"
+                    android:textColor="#000000" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/nametext_set"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginEnd="100dp"-->
+<!--                    android:background="@drawable/css_but"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:hint="@string/nametext_set"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:importantForAutofill="no" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/pencil"-->
+<!--                    android:layout_width=""-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginLeft="100dp"-->
+<!--                    android:layout_marginTop="-30dp"-->
+<!--                    android:contentDescription="@string/pencil"-->
+<!--                    app:srcCompat="@drawable/pencil" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/email_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="100dp"
+                    android:background="@drawable/css_but"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/email_set"
+                    android:textColor="#000000" />
+
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/change_language"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:background="@drawable/addbutto"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:text="@string/change_language"-->
+<!--                    android:spinnerMode="dropdown"-->
+<!--                    android:textColor="#000000" />-->
+                <Spinner
+                    android:id="@+id/change_language"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/addbutto"
+                    android:layout_marginStart="30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Infortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/infortext"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+        <Spinner
+            android:id="@+id/gender_set"
+            android:layout_width="131dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="30dp"
+            android:textAlignment="center"
+            android:background="@drawable/addbutto"
+            android:spinnerMode="dropdown"
+            android:text="@string/gender_set"
+            android:textColor="#000000" />
+<!--        <TextView-->
+<!--            android:id="@+id/view_gen"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/addbutto"-->
+<!--            android:paddingHorizontal="55dp"-->
+<!--            android:paddingVertical="10dp"-->
+<!--            android:text="@string/gender_set"-->
+<!--            android:textColor="#000000"/>-->
+
+        <TextView
+            android:id="@+id/bod_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/addbutto"
+            android:paddingHorizontal="40dp"
+            android:textSize="15sp"
+            android:paddingVertical="10dp"
+            android:text="@string/bod_set"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/hight_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/addbutto"
+            android:hint="@string/hight_set"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="49dp"
+            android:paddingVertical="10dp"
+            android:text="@string/set_hight"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/weight_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/addbutto"
+            android:hint="@string/weight_set"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="44dp"
+            android:paddingVertical="10dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/update_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_but"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:text="@string/update_set"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/itemSex" />
+
+</LinearLayout>

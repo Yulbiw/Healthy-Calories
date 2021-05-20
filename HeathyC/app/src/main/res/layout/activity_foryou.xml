@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0ADA7"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/drawer_act"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:background="#F0ADA7"-->
+<!--                    android:contentDescription="@string/drawer_act"-->
+<!--                    android:paddingVertical="15dp"-->
+<!--                    app:srcCompat="@drawable/menu" />-->
+
+                <TextView
+                    android:id="@+id/bar_foryou"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#F0ADA7"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/bar_foryou"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/img_foryou"
+        android:layout_width="183dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/img_foryou"
+        app:srcCompat="@drawable/foryou" />
+
+    <TextView
+        android:id="@+id/foryou_min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/foryou_min"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textDes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_run"
+                        android:layout_width="131dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/block_corner"
+                        android:contentDescription="@string/img_run"
+                        app:srcCompat="@drawable/run" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/run_c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/run_c" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dt_run"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/dt_run" />
+
+                            <TextView
+                                android:id="@+id/minofrun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginStart="5dp"
+                                android:text="@string/minofrun" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dt_run_cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/dt_run_cal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_topbut"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_yoga"
+            android:layout_width="133dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/block_corner"
+            android:contentDescription="@string/img_yoga"
+            app:srcCompat="@drawable/yogaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yoga_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/yoga_c" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dt_yoga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/dt_yoga" />
+
+                <TextView
+                    android:id="@+id/yogaofmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/yogaofmin" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dt_yoga_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dt_yoga_cal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/but_change"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:paddingHorizontal="40dp"-->
+<!--        android:paddingVertical="10dp"-->
+<!--        android:layout_marginVertical="10dp"-->
+<!--        android:background="@drawable/css_but"-->
+<!--        android:text="@string/but_change" />-->
+</LinearLayout>
+

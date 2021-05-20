@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "250628322202",
+    "firebase_url": "https://healthy-calories.firebaseio.com",
+    "project_id": "healthy-calories",
+    "storage_bucket": "healthy-calories.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250628322202:android:a448d5634c0c3d442bc023",
+        "android_client_info": {
+          "package_name": "com.example.haelthc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250628322202-6710shiqu7b4nh4j09hm72aj558a044r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATQYsgujMYXXcIbyzl_NvJEKhLAwvHhHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250628322202-6710shiqu7b4nh4j09hm72aj558a044r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
